@@ -1,15 +1,16 @@
 <html>
   <head>
-    <title>Snake Q-Learning High-Level Summary</title>
+    <title>Snake DQN High-Level Summary</title>
     <style>
-                table {border-collapse: collapse; width: 70%;}
+                table {border-collapse: collapse; width: 80%;}
                 th, td {padding: 8px; text-align: center; border: 1px solid black;}
                 th {background-color: #f2f2f2;}
                 h1, h2 {font-family: Arial, sans-serif;}
             </style>
   </head>
   <body>
-    <h1>Snake Q-Learning High-Level Summary Report</h1>
+    <h1>Snake DQN High-Level Summary Report</h1>
+    <h2>Best Seed by Moving Average Max Reward: Seed 123 | Max MA Reward = 133.49 at Episode 809</h2>
     <h2>Per-Seed Key Metrics</h2>
     <table>
       <tr>
@@ -20,33 +21,49 @@
         <th>Final Epsilon</th>
         <th>Avg Steps Survived</th>
         <th>Avg Runtime/Episode (s)</th>
+        <th>Raw Max Reward</th>
+        <th>Episode of Raw Max Reward</th>
+        <th>MA Max Reward</th>
+        <th>Episode of MA Max Reward</th>
       </tr>
       <tr>
         <td>42</td>
-        <td>364 / 681 / 686</td>
-        <td>60.20</td>
-        <td>43.63</td>
+        <td>418 / 641 / 1569</td>
+        <td>60.09</td>
+        <td>44.94</td>
         <td>0.050</td>
-        <td>51.56</td>
-        <td>1.620</td>
+        <td>51.66</td>
+        <td>2.621</td>
+        <td>240.74</td>
+        <td>1041</td>
+        <td>117.89</td>
+        <td>1663</td>
       </tr>
       <tr>
         <td>123</td>
-        <td>383 / 685 / 1352</td>
-        <td>60.18</td>
-        <td>43.36</td>
+        <td>414 / 804 / 806</td>
+        <td>59.79</td>
+        <td>44.23</td>
         <td>0.050</td>
         <td>51.59</td>
-        <td>1.621</td>
+        <td>2.628</td>
+        <td>254.78</td>
+        <td>2238</td>
+        <td>133.49</td>
+        <td>809</td>
       </tr>
       <tr>
         <td>999</td>
-        <td>383 / 827 / 945</td>
-        <td>58.42</td>
-        <td>41.82</td>
+        <td>396 / 721 / 1701</td>
+        <td>60.19</td>
+        <td>44.11</td>
         <td>0.050</td>
-        <td>50.46</td>
-        <td>1.599</td>
+        <td>51.41</td>
+        <td>2.754</td>
+        <td>252.98</td>
+        <td>1873</td>
+        <td>119.89</td>
+        <td>1702</td>
       </tr>
     </table>
     <h2>Aggregate Metrics Across Seeds</h2>
@@ -57,11 +74,11 @@
       </tr>
       <tr>
         <td>Mean of Mean Rewards</td>
-        <td>59.601</td>
+        <td>60.023</td>
       </tr>
       <tr>
         <td>Std Dev of Mean Rewards</td>
-        <td>0.835</td>
+        <td>0.170</td>
       </tr>
       <tr>
         <td>Mean Final Epsilon</td>
@@ -69,11 +86,19 @@
       </tr>
       <tr>
         <td>Mean Avg Steps Survived</td>
-        <td>51.204</td>
+        <td>51.552</td>
       </tr>
       <tr>
         <td>Mean Runtime per Episode (s)</td>
-        <td>1.613</td>
+        <td>2.667</td>
+      </tr>
+      <tr>
+        <td>Mean Raw Max Reward</td>
+        <td>249.500</td>
+      </tr>
+      <tr>
+        <td>Mean MA Max Reward</td>
+        <td>123.756</td>
       </tr>
     </table>
   </body>
